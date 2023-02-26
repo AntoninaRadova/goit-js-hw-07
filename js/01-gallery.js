@@ -10,9 +10,9 @@ galleryItems.forEach((element) => {
   galleryItem.classList.add("gallery__item");
 
   // створення "a"
-  const galleryLink = document.createElement("a");
-  galleryLink.classList.add("gallery__link");
-  galleryLink.href = element.original;
+  const galleryLnk = document.createElement("a");
+  galleryLnk.classList.add("gallery__link");
+  galleryLnk.href = element.original;
 
   // створення img
   const galleryImg = document.createElement("img");
@@ -22,8 +22,8 @@ galleryItems.forEach((element) => {
   // додавання "data-source", "alt"
   galleryImg.setAttribute("data-source", element.original);
   galleryImg.alt = element.description;
-  galleryItem.append(galleryLink);
-  galleryLink.append(galleryImg);
+  galleryItem.append(galleryLnk);
+  galleryLnk.append(galleryImg);
   items.push(galleryItem);
 });
 
