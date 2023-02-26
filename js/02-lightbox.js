@@ -6,9 +6,9 @@ const items = [];
 
 galleryItems.forEach((element) => {
     
-  const galleryLink = document.createElement("a");
-  galleryLink.classList.add("gallery__link");
-  galleryLink.href = element.original;
+  const galleryLnk = document.createElement("a");
+  galleryLnk.classList.add("gallery__link");
+  galleryLnk.href = element.original;
 
   const galleryImage = document.createElement("img");
 
@@ -20,8 +20,8 @@ galleryItems.forEach((element) => {
 
   galleryImage.alt = element.description;
 
-  galleryLink.append(galleryImage);
-  items.push(galleryLink);
+  galleryLnk.append(galleryImage);
+  items.push(galleryLnk);
 });
 
 gallery.append(...items);
